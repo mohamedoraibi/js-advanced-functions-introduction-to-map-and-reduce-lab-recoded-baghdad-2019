@@ -39,6 +39,6 @@ function reduceToAllTrue(sourceArray){
 function reduceToAnyTrue(sourceArray){
   let arrays =[]
   
-  arrays =sourceArray.reduce((a, b) => a || Boolean(b), true)
+  arrays =sourceArray.reduce((a, b) => a && Boolean(b), true)
   return arrays
 }
