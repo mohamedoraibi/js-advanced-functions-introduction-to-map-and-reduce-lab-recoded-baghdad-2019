@@ -24,10 +24,10 @@ function mapToSquare(sourceArray){
 }
 
 
-function reduceToTotal(sourceArray){
+function reduceToTotal(sourceArray,startingPoint){
   let arrays =[]
   
-  arrays =sourceArray.reduce((a, b) => a + b, 0)
+  arrays =sourceArray.reduce((a, b) => a + b, startingPoint)
   return arrays
 }
 function reduceToAllTrue(sourceArray){
