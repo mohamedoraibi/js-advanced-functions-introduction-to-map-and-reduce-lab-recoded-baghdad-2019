@@ -33,7 +33,7 @@ function reduceToTotal(sourceArray,startingPoint=0){
 function reduceToAllTrue(sourceArray){
   let arrays =[]
   
-  arrays =sourceArray.reduce((a, b) => a + b, 0)
+  arrays =sourceArray.reduce((a, b) => a && Boolean(predicate(b)), true)
   return arrays
 }
 function reduceToAnyTrue(sourceArray){
